@@ -1,0 +1,69 @@
+<html>
+
+
+
+<head>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+
+
+<form th:action="@{/matriculas/insertar}"  th:method="POST">
+	<table  class="table table-dark table-striped-columns" >
+
+		<tr>
+
+			<td><label>Cedula</label></td>
+
+			<td><input type="text" th:value="${cedula}" name="cedula"></td>
+		</tr>
+
+		<tr>
+
+			<td><label>Codigo 1</label></td>
+
+			<td><input type="text" th:value="${codigoM1}" name="codigoM1"></td>
+		</tr>
+
+
+	<tr>
+
+			<td><label>Codigo 2</label></td>
+
+			<td><input type="text" th:value="${codigoM2}" name="codigoM2"></td>
+		</tr>
+
+
+<tr>
+
+			<td><label>Codigo 3</label></td>
+
+			<td><input type="text" th:value="${codigoM3}" name="codigoM3"></td>
+		</tr>
+
+
+<tr>
+
+			<td><label>Codigo 4</label></td>
+
+			<td><input type="text" th:value="${codigoM4}" name="codigoM4"></td>
+		</tr>
+
+
+
+	</table>
+	
+	<input type="submit" value="Guardar">
+	
+	</form>
+
+
+</body>
+
+
+
+</html>

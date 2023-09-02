@@ -1,0 +1,47 @@
+<html>
+	
+	
+	<head>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	</head>
+	
+	<body>
+		<form th:action="@{/materias/insertar}" th:object="${materia}" th:method="POST">
+		<table class="table table-dark table-striped-columns" >
+			
+			<tr>
+				
+				<td><label>Nombre</label></td>
+				<td><input type="text" th:field="${materia.nombre}"  placeholder="Nombre"></td>
+			</tr>
+			
+			<tr>
+				<td><label>Code</label></td>
+				<td><input type="text" th:field="${materia.codigo}"  placeholder="Codigo"></td>
+			</tr>
+			
+			
+			<tr>
+				
+				<td><label>Creditos</label></td>
+				<td><input type="number" th:field="${materia.numeroCreditos}"  placeholder="Numero de Creditos"></td>
+			</tr>
+			
+			
+			<tr>
+				<td><label>Profesor</label></td>
+				<td><input type="text" th:field="${materia.cedulaProfesor}"  placeholder="Cedula Prof"></td>
+			</tr>
+			
+			
+		</table>
+		
+		<input type="submit" value="Guardar">
+		</form>
+		
+	</body>
+	
+	
+	
+</html>
